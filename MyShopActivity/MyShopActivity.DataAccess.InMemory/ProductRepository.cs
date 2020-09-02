@@ -28,7 +28,7 @@ namespace MyShopActivity.DataAccess.InMemory
             cache["products"] = products;
         }
 
-        public void Inser(Product product)
+        public void Insert(Product product)
         {
             products.Add(product);
         }

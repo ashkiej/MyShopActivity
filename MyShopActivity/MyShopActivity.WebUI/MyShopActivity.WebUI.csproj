@@ -175,6 +175,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -338,6 +339,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -352,6 +357,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyShopActivity.Core\MyShopActivity.Core.csproj">
+      <Project>{b69381a7-b2d3-481e-be33-c10778e6c821}</Project>
+      <Name>MyShopActivity.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShopActivity.DataAccess.InMemory\MyShopActivity.DataAccess.InMemory.csproj">
+      <Project>{3f320f1f-6418-41e6-b44e-f7a0af550418}</Project>
+      <Name>MyShopActivity.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShopActivity.DataAccess.SQL\MyShopActivity.DataAccess.SQL.csproj">
+      <Project>{8cdcf2bc-1342-4f12-907c-e4619704e28c}</Project>
+      <Name>MyShopActivity.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShopActivity.Services\MyShopActivity.Services.csproj">
+      <Project>{a2c12dc5-5cdd-4f12-8cea-63a53ff6855c}</Project>
+      <Name>MyShopActivity.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
