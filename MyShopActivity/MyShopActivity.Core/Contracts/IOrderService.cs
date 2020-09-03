@@ -12,7 +12,7 @@ namespace MyShopActivity.Core.Contracts
     {
         void CreateOrder(Order baseOrder, List<BasketItemViewModel> basketItems);
         List<Order> GetOrderList();
-        Order GetOrder(string id);
-        void UpdateOrder(Order updateOrder);
+        Order GetOrder(string Id);
+        void UpdateOrder(Order updatedOrder);
     }
 }
