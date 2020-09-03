@@ -1,4 +1,4 @@
-﻿using MyShopActivity.Core.Contracts;
+﻿ using MyShopActivity.Core.Contracts;
 using MyShopActivity.Core.Models;
 using MyShopActivity.Core.ViewModels;
 using System;
