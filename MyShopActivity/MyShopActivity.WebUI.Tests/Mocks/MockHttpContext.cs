@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
@@ -14,6 +15,7 @@ namespace MyShopActivity.WebUI.Tests.Mocks
         private MockRequest request;
         private MockResponse response;
         private HttpCookieCollection cookies;
+        private IPrincipal FakeUser;
 
         public MockHttpContext()
         {
@@ -21,6 +23,8 @@ namespace MyShopActivity.WebUI.Tests.Mocks
             this.request = new MockRequest(cookies);
             this.response = new MockResponse(cookies);
         }
+
+        public override IPrincipal User { get { return this.FakeUser; } set { this.FakeUser = value; } }
 
         public override HttpRequestBase Request
         {
